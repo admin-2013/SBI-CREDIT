@@ -1,0 +1,11 @@
+---
+- name: copying artifcats into production
+  hosts: all
+  become: yes
+  tasks:
+   - name: copy module
+     copy:
+      src: /home/ubuntu/app1.war
+      dest: /home/ubuntu
+...
+
